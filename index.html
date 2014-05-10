@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="This is Mil's webpage to keep my check-ins available">
+
+        <!-- This meta tag makes the browser detect the device's width and make sure it shows the right css if it's a small screen -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link href='http://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/checkin-style.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="js/vendor/jquery-1.11.0.min.js" rel="Javascript"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="container">
+            <header>
+                <h1>Mil's check-in page</h1>
+                <p>A place to find check-in documents and to check the progress of 1AF Infrastructure projects </p>
+                <img id="header-img" src="img/infratext.png" alt="One Acre Fund Infrastructure">
+            </header>
+            <nav class="main-nav">
+                
+                <!-- This is the home button -->
+                <a class="homelink" href="index.html">
+                    <img id="nav-img" src="img/infratext.png" alt="One Acre Fund Infrastructure">
+                </a>    
+                
+                <!-- Other menu items -->
+                <ul>
+                    <li><a class="menuitem" href="#">Older check-ins</a></li>
+                    <li><a class="menuitem" href="#">Project Dashboard</a></li>
+                </ul>
+            </nav>
+            
+            <div class="main">
+                <h1> These are my latest check-ins </h1>
+                <div class="check-in">
+                    <h2 class="checkin-title">Mil's Check-in 10/April/2014</h2>
+                    <h3>Mil's time allocation</h3>
+                        <p>This is how I've been spending my time lately</p>
+                        <img src="img/timeallocation.png" alt="Time allocation for the past week">
+                    <h3>Brainstorms</h3>
+                    <ul>
+                        <li>Interaction between stakeholders for design of new office 
+                            <ul>
+                                <li> <em>Train of thought: </em>For the design of the new office there are going to be many parties involved (GPs, Mil, design committee, design firm, final users) and there needs to be a system in place to determine prioritization of decisions and assure an effective and efficient design process, especially with the urgency that this project will have.</li>
+                                <li><em>Questions to guide discussion: </em>
+                                    <ul>
+                                        <li>How are we going to define the design committee? What are we looking for with this?</li>
+                                        <li>How are we going to determine who gets to decide over different design aspects?</li>
+                                        <li>Should we be providing direction to the design firm? Or do we want to make this a very open conversation?</li>
+                                        <li>How can we make sure that everyone is going to be satisfied with the final product?</li>
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Vehicle Maintenance and repair solution
+                            <ul>
+                                <li> <em>Train of thought: </em>Our vehicles are a big pain for the QoL of expats. We are also spending a significant amount of money on these vehicles and its benefits are not really visible. We have the opportunity to significantly improve the system used for keeping these vehicles functional. How should we go about it?</li>
+                                <li><em>Questions to guide discussion: </em>
+                                    <ul>
+                                        <li>We have to opportunity to partner up with RfH for outsourcing vehicle maintenance and repairs. According to my analysis we could save more than 20% of what we are currently spending and also dedicate a lot less time to it. What could be the drawbacks of this partnership?</li>
+                                        <li>If we decide to move forward with this opportunity, how should we manage this relationship?</li>
+                                        <li>If we don’t decide to move forward with it, what are some ideas that could be implemented in order to improve our current MO?</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>            
+                </div>
+
+            </div>
+
+            <p class="copyright">&copy; One Acre Fund. All rights reserved.</p>
+        
+        </div>
+        <!-- This is the JS code that makes the sticky menu bar-->
+        <script>
+                var  mn = $(".main-nav"), homeLink = $(".home-link");
+                    mns = "main-nav-scrolled";
+                    hls = "home-link-scrolled";
+
+                $(window).scroll(function() {
+                  if( $(this).scrollTop() > 300 ) {
+                    mn.addClass(mns);
+                    homeLink.addClass(hls);
+                  }
+                  else {
+                    mn.removeClass(mns);
+                    homeLink.removeClass(hls);
+                  }
+                });
+            </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
