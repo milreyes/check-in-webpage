@@ -21,6 +21,7 @@ textarea {
 html {
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*
@@ -102,23 +103,43 @@ textarea {
 MOBILE FIRST LAYOUT
 **********************************/
 
+h1 {
+
+    font-family: 'Lato', serif;
+    margin: 0;
+}
+
+.menuitem {
+    font-family: 'Lato', sans-serif;
+}
+
+.menuitem:hover {
+    border-top: solid 3px rgb(73,123,101);
+}
+
+img {
+    width: 100%;
+}
+
 body {
 
-    background-color: #CCC;
+    background-color: #eae9e1;
 }
 
 header {
     display: none;
+    background-color: #f54d27;
 
 }
 
 nav {
-    background-color: #AAA;
+    background-color: #f7be4a;
 }
 
-.container {
+.main {
 
-    background-color: #BABABA;
+    background-color: #eae9e1;
+    padding: 10px;
 }
 
 #nav-img {
@@ -130,7 +151,7 @@ nav {
 nav ul li {
     display: block;
     padding: 5px;
-    border: 1px solid #FAFAFA;
+    /*border: 1px solid #FAFAFA;*/
     text-align: center;
     border-radius: 5px;
     margin: auto;
@@ -141,6 +162,13 @@ a {
     color: #000;
 }
 
+.copyright {
+
+    font-size: .75em;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    text-align: center;
+}
 
 
 
@@ -152,16 +180,40 @@ VIEWPORT SIZE > 481px & < 681 px
 
     header {
         display: block;
+
+    }
+
+    header img {
+        width:300px;
+        position: relative;
+        right: -40%;
+
     }
 
     nav ul {
         margin-left: 100px;
-        background: red;
+        /*background: red;*/
+    }
+
+    .homelink {
+
+        float: left;
+        margin-left: 10px;
+        margin-top: 5px;
+        width: 150px;
     }
     nav ul li {
-        display: inline-block;
-        
+        float: right;
+        font-size: .75em;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        padding-top: 5px;
 
+    }
+
+    nav ul:last-child {
+
+        margin-right: 10px;
     }
 
     a {
